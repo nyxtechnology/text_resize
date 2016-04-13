@@ -36,3 +36,9 @@ a#text_resize_decrease {
 #text_resize_clear {
   clear: both;
 }
+.block-text-resize .contextual {
+  right: -20px; /* LTR */
+}
+.block-text-resize [dir="rtl"] .contextual {
+  left: -20px;
+}
