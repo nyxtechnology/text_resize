@@ -1,7 +1,7 @@
 /* $Id $ */
 
 a#text_resize_increase {
-  background: url(aBig.gif) no-repeat 0 0;
+  background: url(../images/aBig.gif) no-repeat 0 0;
   display: block;
   float: right;
   width: 28px;
@@ -12,7 +12,7 @@ a#text_resize_increase {
   cursor: pointer;
 }
 a#text_resize_reset {
-  background: url(a_reset.gif) no-repeat 0 0;
+  background: url(../images/a_reset.gif) no-repeat 0 0;
   display: block;
   float: right;
   width: 25px;
@@ -23,7 +23,7 @@ a#text_resize_reset {
   cursor: pointer;
 }
 a#text_resize_decrease {
-  background: url(aSmall.gif) no-repeat 0 0;
+  background: url(../images/aSmall.gif) no-repeat 0 0;
   display: block;
   float: right;
   width: 23px;

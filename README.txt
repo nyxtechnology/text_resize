@@ -3,11 +3,11 @@
 Description
 -------
 The Text Resize module creates a block with links that use
-jQuery to resize text within the specified DIV.
+jQuery to resize text within the specified div.
 
 Text Resize was originally written by Mark W. Jarrell (attheshow) at
-Fleet Thought (http://fleetthought.com). Thanks to pallavi_sugandhi for the
-D8 port.
+Fleet Thought (http://fleetthought.com). Thanks to pallavi_sugandhi for starting
+the D8 port.
 
 
 Install
@@ -37,3 +37,5 @@ Support
 If you experience a problem with the module, file a
 request or issue on the Text Resize queue. DO NOT POST IN THE FORUMS. Posting in
 the issue queues is a direct line of communication with the module author.
+
+See: https://www.drupal.org/project/issues/text_resize
