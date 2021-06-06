@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_help().
@@ -13,7 +14,7 @@ use Drupal\Core\Routing\RouteMatchInterface;
 function text_resize_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
     case 'help.page.text_resize':
-      $output = '<p>' . t('The Text Resize module creates a block on the page that can be used by your site visitors to quickly and easily adjust the sizing of text as it displays for them.  In order to enable the functionality of the Text Resize module, you will need to make sure that you have enabled the Text Resize block on the <a href="!block">blocks page</a>. You will also probably want to configure the behavior of the module at the administration pages listed at the bottom of this page.', ['!block' => (\Drupal::moduleHandler()->moduleExists('block')) ? \Drupal::url('block.admin_display') : '#']) . '</p>';
+      $output = '<p>' . t('The Text Resize module creates a block on the page that can be used by your site visitors to quickly and easily adjust the sizing of text as it displays for them.  In order to enable the functionality of the Text Resize module, you will need to make sure that you have enabled the Text Resize block on the <a href="!block">blocks page</a>. You will also probably want to configure the behavior of the module at the administration pages listed at the bottom of this page.', ['!block' => (\Drupal::moduleHandler()->moduleExists('block')) ? Url::fromRoute('block.admin_display')->toString() : '#']) . '</p>';
       $output .= '<h2>' . t('Changing How Text Resize Looks') . '</h2>';
       $output .= '<h3>' . t('Method 1: Just CSS') . '</h3>';
       $output .= '<p>' . t('Text Resize creates two stylized hyperlinks on the page (and a third if you enable the reset button option). You can add new styles to your own theme\'s stylesheet that will override the default CSS styles produced by Text Resize. The ids you\'ll want to add and modify in your stylesheet are:') . '</p>';
